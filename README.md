@@ -13,9 +13,16 @@ You can use this code to scrap any website data which doesn't requires login.<br
 If anyone got any module error, then install that module like<br/>
 > pip install module_name
 
+### For accessing Fast API, run collect_events.py file first ( for creating events.json file ):
+> python collect_events.py<br/>
+> uvicorn main:app --reload
+
+Then go to the respective url( Ex: http://127.0.0.1:8000/ ), for a better view just add "docs" or "redoc" to your url. ( Ex: http://127.0.0.1:8000/docs or http://127.0.0.1:8000/redoc ) and explore it.
+
 ### Reference <br/>
 
 1). https://beautiful-soup-4.readthedocs.io/ <br/>
-2). https://www.onthisday.com/
+2). https://www.onthisday.com/<br/>
+3). https://fastapi.tiangolo.com/
 
 #### For any doubts, raise your issues, willingly waiting to help you and clear your doubts...
