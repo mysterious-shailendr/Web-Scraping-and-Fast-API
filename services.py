@@ -4,7 +4,7 @@ import datetime as _dt
 
 def get_all_events() -> Dict:
     with open("events.json") as events_file:
-        data = _json.load(events_file)
+        data = _json.load(events_file, encoding='utf8')
         
     return data
 
