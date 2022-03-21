@@ -3,8 +3,8 @@ import json as _json
 import datetime as _dt
 
 def get_all_events() -> Dict:
-    with open("events.json") as events_file:
-        data = _json.load(events_file, encoding='utf8')
+    with open("events.json", encoding='utf-8') as events_file:
+        data = _json.load(events_file)
         
     return data
 
